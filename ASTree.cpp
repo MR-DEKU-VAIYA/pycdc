@@ -128,6 +128,7 @@ PycRef<ASTNode> BuildFromCode(PycRef<PycCode> code, PycModule* mod)
                 && opcode != Pyc::JUMP_IF_TRUE_OR_POP_A
                 && opcode != Pyc::POP_JUMP_IF_TRUE_A
                 && opcode != Pyc::POP_JUMP_FORWARD_IF_TRUE_A
+                && opcode != Pyc::POP_JUMP_BACKWARD_IF_FALSE,POP_JUMP_BACKWARD_IF_FALSE
                 && opcode != Pyc::POP_BLOCK) {
             else_pop = false;
 
